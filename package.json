@@ -1,0 +1,28 @@
+{
+  "name": "dev",
+  "version": "0.0.1",
+  "description": "dev",
+  "private": true,
+  "dependencies": {
+    "http-proxy-agent": "^1.0.0",
+    "body-parser": "^1.15.0",
+    "ejs": "^2.4.2",
+    "express": "^4.13.3",
+    "request": "^2.57.0"
+  },
+  "scripts": {
+    "_update_version": "node version.js",
+
+    "preonline": "bower install",
+    "online": "fis3 release online -c",
+
+    "preonline196": "bower install",
+    "online196": "fis3 release online196 -c",
+
+    "predevelop": "bower install",
+    "develop": "fis3 release develop -c",
+
+    "predev": "bower install",
+    "dev": "fis3 release develop -c"
+  }
+}

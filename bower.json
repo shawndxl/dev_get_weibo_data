@@ -1,0 +1,7 @@
+{
+  "name": "dev",
+  "private": true,
+  "dependencies": {
+    "lib": "http://gitlab.com/lib.git#0.0.1"
+  }
+}

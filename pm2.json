@@ -1,0 +1,24 @@
+{
+  "apps": [{
+    "merge_logs": true,
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+
+    /*<remove>*/
+      /*<jdists export="#case" trigger="online">*/
+    "name": "weibo-8097",
+    "args": ["8097"],
+      /*</jdists>*/
+
+      /*<jdists export="#case" trigger="develop">*/
+    "name": "weibo-8115",
+    "args": ["8115"],
+      /*</jdists>*/
+    /*</remove>*/
+
+    /*<jdists import="#case" />*/
+    "script": "app.js",
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }]
+}
